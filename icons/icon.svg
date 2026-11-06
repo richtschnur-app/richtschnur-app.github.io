@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Richtschnur: vorläufiges Symbol (zwei schräg eingeschlagene Pflöcke im Boden, dazwischen eine gespannte Schnur). Farben aus src/ui/palette.ts. PNGs: node scripts/icons-erzeugen.js -->
+  <rect width="512" height="512" fill="#2E5E3C"/>
+  <rect x="96" y="318" width="320" height="10" rx="5" fill="#8CCB9A"/>
+  <g transform="rotate(-14 148 330)"><path d="M136 196h24v124l-12 30-12-30z" fill="#EFF1EA"/></g>
+  <g transform="rotate(14 364 330)"><path d="M352 196h24v124l-12 30-12-30z" fill="#EFF1EA"/></g>
+  <line x1="126" y1="214" x2="386" y2="214" stroke="#F0A07E" stroke-width="8" stroke-linecap="round"/>
+</svg>
