@@ -2,8 +2,8 @@
 // In den Cache kommen NUR die App-Shell (index.html) und statische Dateien des Builds (JS, Schriften, Symbole) – gleiche Herkunft, nur GET.
 // Datenabrufe (Supabase-API, Speicher, Edge Functions) laufen nie durch diesen Cache: andere Herkunft → wird gar nicht angefasst.
 // Version und Dateiliste setzt scripts/pwa.js beim Build ein; ohne Build (Entwicklung) ist der Worker untätig.
-const VERSION = "395c44d58977dbbf";
-const DATEIEN = ["/_expo/static/js/web/entry-aeb2bc47fb477f3055d5dd9f8c681d2f.js","/assets/node_modules/@expo-google-fonts/bricolage-grotesque/500Medium/BricolageGrotesque_500Medium.1363130c7bdf956d164cb7e605619849.ttf","/assets/node_modules/@expo-google-fonts/bricolage-grotesque/600SemiBold/BricolageGrotesque_600SemiBold.e5b5fc505484ff3ca24da73cba67c660.ttf","/assets/node_modules/@expo-google-fonts/bricolage-grotesque/700Bold/BricolageGrotesque_700Bold.2f7de7a336f650f9cee5ed919cc3b003.ttf","/assets/node_modules/@expo-google-fonts/bricolage-grotesque/800ExtraBold/BricolageGrotesque_800ExtraBold.5bfb4fa1f8907c768231d97bc27e8df9.ttf","/assets/node_modules/@expo-google-fonts/nunito-sans/400Regular/NunitoSans_400Regular.9a446df4acd337a0803b98608aab1e66.ttf","/assets/node_modules/@expo-google-fonts/nunito-sans/500Medium/NunitoSans_500Medium.fbd0884ddc5d2f3099b41283cc8f2f7d.ttf","/assets/node_modules/@expo-google-fonts/nunito-sans/600SemiBold/NunitoSans_600SemiBold.58a08cfbaf11a92ef3aaf80e768a16ad.ttf","/assets/node_modules/@expo-google-fonts/nunito-sans/700Bold/NunitoSans_700Bold.d16d2c478d30947f35321066f798de6c.ttf","/assets/node_modules/@expo-google-fonts/nunito-sans/800ExtraBold/NunitoSans_800ExtraBold.08d068a6a911ec141fac7d6886d83817.ttf","/assets/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/Ionicons.b4eb097d35f44ed943676fd56f6bdc51.ttf","/assets/node_modules/expo-router/assets/arrow_down.017bc6ba3fc25503e5eb5e53826d48a8.png","/assets/node_modules/expo-router/assets/error.d1ea1496f9057eb392d5bbf3732a61b7.png","/assets/node_modules/expo-router/assets/file.19eeb73b9593a38f8e9f418337fc7d10.png","/assets/node_modules/expo-router/assets/forward.d8b800c443b8972542883e0b9de2bdc6.png","/assets/node_modules/expo-router/assets/pkg.ab19f4cbc543357183a20571f68380a3.png","/assets/node_modules/expo-router/assets/react-navigation/elements/back-icon-mask.0a328cd9c1afd0afe8e3b1ec5165b1b4.png","/assets/node_modules/expo-router/assets/react-navigation/elements/back-icon.35ba0eaec5a4f5ed12ca16fabeae451d.png","/assets/node_modules/expo-router/assets/react-navigation/elements/clear-icon.c94f6478e7ae0cdd9f15de1fcb9e5e55.png","/assets/node_modules/expo-router/assets/react-navigation/elements/clear-icon.c94f6478e7ae0cdd9f15de1fcb9e5e55@2x.png","/assets/node_modules/expo-router/assets/react-navigation/elements/clear-icon.c94f6478e7ae0cdd9f15de1fcb9e5e55@3x.png","/assets/node_modules/expo-router/assets/react-navigation/elements/clear-icon.c94f6478e7ae0cdd9f15de1fcb9e5e55@4x.png","/assets/node_modules/expo-router/assets/react-navigation/elements/close-icon.808e1b1b9b53114ec2838071a7e6daa7.png","/assets/node_modules/expo-router/assets/react-navigation/elements/close-icon.808e1b1b9b53114ec2838071a7e6daa7@2x.png","/assets/node_modules/expo-router/assets/react-navigation/elements/close-icon.808e1b1b9b53114ec2838071a7e6daa7@3x.png","/assets/node_modules/expo-router/assets/react-navigation/elements/close-icon.808e1b1b9b53114ec2838071a7e6daa7@4x.png","/assets/node_modules/expo-router/assets/react-navigation/elements/search-icon.286d67d3f74808a60a78d3ebf1a5fb57.png","/assets/node_modules/expo-router/assets/sitemap.412dd9275b6b48ad28f5e3d81bb1f626.png","/assets/node_modules/expo-router/assets/unmatched.20e71bdf79e3a97bf55fd9e164041578.png","/favicon.ico","/icons/apple-touch-icon.png","/icons/favicon-32.png","/icons/icon-192.png","/icons/icon-512.png","/icons/icon-maskable-512.png","/icons/icon.svg","/manifest.webmanifest"];
+const VERSION = "49515158fbbdc9a9";
+const DATEIEN = ["/_expo/static/js/web/entry-2512d90f54032e08fbc4ee257fe3d085.js","/assets/node_modules/@expo-google-fonts/bricolage-grotesque/500Medium/BricolageGrotesque_500Medium.1363130c7bdf956d164cb7e605619849.ttf","/assets/node_modules/@expo-google-fonts/bricolage-grotesque/600SemiBold/BricolageGrotesque_600SemiBold.e5b5fc505484ff3ca24da73cba67c660.ttf","/assets/node_modules/@expo-google-fonts/bricolage-grotesque/700Bold/BricolageGrotesque_700Bold.2f7de7a336f650f9cee5ed919cc3b003.ttf","/assets/node_modules/@expo-google-fonts/bricolage-grotesque/800ExtraBold/BricolageGrotesque_800ExtraBold.5bfb4fa1f8907c768231d97bc27e8df9.ttf","/assets/node_modules/@expo-google-fonts/nunito-sans/400Regular/NunitoSans_400Regular.9a446df4acd337a0803b98608aab1e66.ttf","/assets/node_modules/@expo-google-fonts/nunito-sans/500Medium/NunitoSans_500Medium.fbd0884ddc5d2f3099b41283cc8f2f7d.ttf","/assets/node_modules/@expo-google-fonts/nunito-sans/600SemiBold/NunitoSans_600SemiBold.58a08cfbaf11a92ef3aaf80e768a16ad.ttf","/assets/node_modules/@expo-google-fonts/nunito-sans/700Bold/NunitoSans_700Bold.d16d2c478d30947f35321066f798de6c.ttf","/assets/node_modules/@expo-google-fonts/nunito-sans/800ExtraBold/NunitoSans_800ExtraBold.08d068a6a911ec141fac7d6886d83817.ttf","/assets/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/Ionicons.b4eb097d35f44ed943676fd56f6bdc51.ttf","/assets/node_modules/expo-router/assets/arrow_down.017bc6ba3fc25503e5eb5e53826d48a8.png","/assets/node_modules/expo-router/assets/error.d1ea1496f9057eb392d5bbf3732a61b7.png","/assets/node_modules/expo-router/assets/file.19eeb73b9593a38f8e9f418337fc7d10.png","/assets/node_modules/expo-router/assets/forward.d8b800c443b8972542883e0b9de2bdc6.png","/assets/node_modules/expo-router/assets/pkg.ab19f4cbc543357183a20571f68380a3.png","/assets/node_modules/expo-router/assets/react-navigation/elements/back-icon-mask.0a328cd9c1afd0afe8e3b1ec5165b1b4.png","/assets/node_modules/expo-router/assets/react-navigation/elements/back-icon.35ba0eaec5a4f5ed12ca16fabeae451d.png","/assets/node_modules/expo-router/assets/react-navigation/elements/clear-icon.c94f6478e7ae0cdd9f15de1fcb9e5e55.png","/assets/node_modules/expo-router/assets/react-navigation/elements/clear-icon.c94f6478e7ae0cdd9f15de1fcb9e5e55@2x.png","/assets/node_modules/expo-router/assets/react-navigation/elements/clear-icon.c94f6478e7ae0cdd9f15de1fcb9e5e55@3x.png","/assets/node_modules/expo-router/assets/react-navigation/elements/clear-icon.c94f6478e7ae0cdd9f15de1fcb9e5e55@4x.png","/assets/node_modules/expo-router/assets/react-navigation/elements/close-icon.808e1b1b9b53114ec2838071a7e6daa7.png","/assets/node_modules/expo-router/assets/react-navigation/elements/close-icon.808e1b1b9b53114ec2838071a7e6daa7@2x.png","/assets/node_modules/expo-router/assets/react-navigation/elements/close-icon.808e1b1b9b53114ec2838071a7e6daa7@3x.png","/assets/node_modules/expo-router/assets/react-navigation/elements/close-icon.808e1b1b9b53114ec2838071a7e6daa7@4x.png","/assets/node_modules/expo-router/assets/react-navigation/elements/search-icon.286d67d3f74808a60a78d3ebf1a5fb57.png","/assets/node_modules/expo-router/assets/sitemap.412dd9275b6b48ad28f5e3d81bb1f626.png","/assets/node_modules/expo-router/assets/unmatched.20e71bdf79e3a97bf55fd9e164041578.png","/favicon.ico","/icons/apple-touch-icon.png","/icons/favicon-32.png","/icons/icon-192.png","/icons/icon-512.png","/icons/icon-maskable-512.png","/icons/icon.svg","/manifest.webmanifest"];
 const PRAEFIX = 'richtschnur-shell-';
 const CACHE = PRAEFIX + VERSION;
 const AKTIV = !VERSION.startsWith('__');
@@ -68,7 +68,26 @@ function textFeld(form, name) {
   return typeof v === 'string' ? v.slice(0, TEILEN_MAX_TEXT) : '';
 }
 
-if (typeof module !== 'undefined') module.exports = { strategie, istTeilen, teilenHerkunftOk, bildArt, textFeld, TEILEN_CACHE };
+// Web Push (0027, P16): Anzeige und Klick. Die Nachricht kommt verschlüsselt vom Push-Dienst (supabase/functions/push-senden); hier nur
+// anzeigen und beim Antippen die Ziel-Seite DIESER App öffnen – nie eine fremde Adresse. Nichts davon berührt den Cache.
+/** Nutzlast → Anzeige (rein, getestet in tests/webpush.test.ts). Unlesbares wird zu einem neutralen Hinweis statt zu nichts. */
+function pushAnzeige(text) {
+  let d = {};
+  try { d = JSON.parse(text || '{}') || {}; } catch { d = {}; }
+  const s = (v, n, w) => (typeof v === 'string' && v.trim() ? v.slice(0, n) : w);
+  return {
+    titel: s(d.titel, 80, 'Richtschnur'),
+    optionen: { body: s(d.text, 200, 'Es gibt Neuigkeiten.'), tag: s(d.tag, 64, 'rs-sammel'), icon: '/icons/icon-192.png', badge: '/icons/icon-192.png', lang: 'de', data: { ziel: s(d.ziel, 200, '/benachrichtigungen') } },
+  };
+}
+/** Ziel beim Antippen: nur ein Pfad dieser Herkunft (wie sicheresZiel in src/domain/benachrichtigung.ts), sonst die Glocke */
+function klickZiel(ziel, herkunft) {
+  const ok = typeof ziel === 'string' && /^\/[A-Za-z0-9/_?=&.%-]*$/.test(ziel) && !ziel.startsWith('//') && !ziel.includes('..') && ziel.length <= 200;
+  const u = new URL(ok ? ziel : '/benachrichtigungen', herkunft);
+  return u.origin === herkunft ? u.href : new URL('/benachrichtigungen', herkunft).href;
+}
+
+if (typeof module !== 'undefined') module.exports = { strategie, istTeilen, teilenHerkunftOk, bildArt, textFeld, TEILEN_CACHE, pushAnzeige, klickZiel };
 
 if (typeof self !== 'undefined' && typeof self.addEventListener === 'function') {
   self.addEventListener('install', (e) => {
@@ -88,6 +107,24 @@ if (typeof self !== 'undefined' && typeof self.addEventListener === 'function') 
 
   self.addEventListener('message', (e) => {
     if (e.data && e.data.typ === 'cache-leeren') e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => k.startsWith(PRAEFIX)).map((k) => caches.delete(k)))));
+  });
+
+  self.addEventListener('push', (e) => {
+    const a = pushAnzeige(e.data ? e.data.text() : '');
+    e.waitUntil(self.registration.showNotification(a.titel, a.optionen));
+  });
+
+  self.addEventListener('notificationclick', (e) => {
+    e.notification.close();
+    const ziel = klickZiel(e.notification.data && e.notification.data.ziel, self.location.origin);
+    e.waitUntil((async () => {
+      // Offenes Fenster dieser App nach vorn holen und dorthin wechseln, sonst neues Fenster
+      for (const c of await self.clients.matchAll({ type: 'window', includeUncontrolled: true })) {
+        if (new URL(c.url).origin !== self.location.origin) continue;
+        try { await c.focus(); if ('navigate' in c) await c.navigate(ziel); return; } catch { /* weiter mit neuem Fenster */ }
+      }
+      await self.clients.openWindow(ziel);
+    })());
   });
 
   self.addEventListener('fetch', (e) => {
